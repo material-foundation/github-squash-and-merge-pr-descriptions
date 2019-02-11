@@ -34,7 +34,7 @@
     if (!squashContainer) {
       return;
     }
-    var squashButton = squashContainer.querySelector('button[type="submit"]');
+    var squashButton = squashContainer.querySelector('button[data-details-container=".js-merge-pr"]');
   
     if (squashButton.getAttribute('squashmerge')) {
       return;
