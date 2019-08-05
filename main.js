@@ -30,12 +30,8 @@
     if (document.location.href.indexOf('/pull/') === -1) {
       return;
     }
-    var squashContainer = document.getElementsByClassName('btn-group-squash')[0];
-    if (!squashContainer) {
-      return;
-    }
-    var squashButton = squashContainer.querySelector('button[data-details-container=".js-merge-pr"]');
-  
+   
+    var squashButton = document.querySelector('button.btn-group-squash[data-details-container=".js-merge-pr"]')
     if (squashButton.getAttribute('squashmerge')) {
       return;
     }
